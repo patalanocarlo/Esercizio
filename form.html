@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esempio di Form</title>
+    <style>
+      footer {
+        position: absolute;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Raccolta Dati</h1>
+    </header>
+    <main>
+      <form>
+        <div>
+          <label for="Primo nome">Carlo Patalno</label>
+          <input
+            id="Primo nome"
+            type="text"
+            placeholder="Mario"
+            autofocus
+            maxlength="10"
+            minlength="5"
+          />
+        </div>
+        <div>
+          <label for="età">La mia età</label>
+          <input type="text" id="età" disabled />
+        </div>
+        <div>
+          <label for="colore">Il tuo colore preferito </label>
+          <input type="color" id="colore" />
+        </div>
+        <div>
+          <button>invia</button>
+          <!--un bottono invia il segnale senza inserire la dicitura type submit 
+    se non voglio che il bottono invii il segnale devo usare il comando type button-->
+          <div><button type="reset">Reset</button></div>
+        </div>
+        <div>
+          <label for="bio">paralaci di te</label>
+          <textarea rows="10"></textarea>
+        </div>
+        <div>
+          <label for="team">che squadra sei</label>
+          <select id="team"></select>
+          <option value="red"</option>
+        </div>
+      </form>
+    </main>
+    <footer>©Copyright</footer>
+  </body>
+</html>
